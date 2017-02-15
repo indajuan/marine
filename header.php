@@ -48,6 +48,7 @@
 					<li><a href="./home.php">Home</a></li>
 					<li><a href="./tools.php">Tools</a></li>
 					<li><a href="./user.php">User</a></li>
+					<li><a href="./map.php">Map</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
