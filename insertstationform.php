@@ -9,26 +9,17 @@
     <meta name="author" content="">
     <link rel="icon" href="./favicon.ico">
 
-    <title>Tools</title>
+    <title>Admin</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  
   </head>
 
   <body>
@@ -43,18 +34,47 @@
     <h1>New Station data</h1>
     <br>
 	<form action="insertstation.php" method="post">
-		Station Name: <input type="text" name="name"><br>
-		Station Sequence: <input type="text" name="sequence"><br>
-		Station Longitude: <input type="text" name="longitude"><br>
-		Station Latitude: <input type="text" name="latitude"><br>
-		<input type="Submit">
+            <table class="table-condensed" align="center">
+                <thead><tr><th></th></tr></thead>
+                <tbody align="right"><tr><td>Station Name:</td><td><input type="text" name="name"></td></tr>
+                <tr><td>Station Sequence:</td><td><input type="text" name="sequence"></td></tr>
+                <tr><td>Station Longitude:</td><td><input type="text" name="longitude"></td></tr>
+                <tr><td>Station Latitude:</td><td><input type="text" name="latitude"></td></tr></tbody>
+            </table>
+            <input type="Submit">
 	</form>
+    <br>
+    
+        <table class="table-condensed" align="center">
+            <thead><tr><th></th></tr></thead>
+            <tbody align="left">
+                <tr><td>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Name</label>
+                    </div>
+                </td></tr>
+                <tr><td>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Sequence</label>
+                    </div>
+                </td></tr>
+                <tr><td>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Longitude</label>
+                    </div>
+                </td></tr>
+                <tr><td>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Latitude</label>
+                    </div>
+                </td></tr>
+            </tbody>
+        </table>
+
   </div>
   
 </div><!-- /.container -->
 
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
