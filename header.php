@@ -38,8 +38,8 @@
                 <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
                                 <li><a href="./home.php">Home</a></li>
-                                <li><a href="./compare.php">Tools</a></li>
-                                <li><a href="./insertstationform.php">Admin</a></li>
+                                <li><a href="./download.php">Tools</a></li>
+                                <li><a href="./insertdataform.php">Admin</a></li>
                                 <li><a href="./map.php">Map</a></li>
                         </ul>
                 </div><!--/.nav-collapse -->
