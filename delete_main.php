@@ -57,9 +57,11 @@ Any changes done in under Station will affect tables Physical and Biological as 
 		Hide or show: <select class="selectpicker"  name = "station_to_hide">
 						<option selected name ="station_to_hide" value ="0"> HIDE</option>
 						<option name ="station_to_hide" value ="1"> SHOW</option>
+						<input type="hidden" name = "table" value = "station">
 		</select>
 
 		<br>
+		
 		<input type="submit" name="submit" Value="Submit"/>
 		</form>
 
@@ -100,6 +102,7 @@ Any changes done in under Station will affect tables Physical and Biological as 
 		Hide or show:  <select class="selectpicker"  name = "physical_to_hide">
 						<option selected name ="physical_to_hide" value ="0"> HIDE</option>
 						<option name ="physical_to_hide" value ="1"> SHOW</option>
+						<input type="hidden" name = "table" value = "physical">
 		</select>
 
 		<br>
@@ -168,6 +171,7 @@ Any changes done in under Station will affect tables Physical and Biological as 
 		Hide or show: <select class="selectpicker"  name = "biological_to_hide">
 						<option selected name ="biological_to_hide" value ="0"> HIDE</option>
 						<option name ="biological_to_hide" value ="1"> SHOW</option>
+						<input type="hidden" name = "table" value = "biological">
 		</select>
 
 		<br>

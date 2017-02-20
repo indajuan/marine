@@ -71,7 +71,7 @@
 		<select class="selectpicker" multiple data-actions-box="true" name = station_list[]>
 			<?php 
 				include 'db.php'; //establish database connection script
-				$result = $conn->query("SELECT Sname from Stations WHERE Shidden = 0");
+				$result = $conn->query("SELECT Sname from Stations WHERE Shidden = 0 order by Sname");
 				while($row = $result->fetch_assoc()) {
 					$station = htmlentities($row['Sname']); 
 					print "<option selected name =\"station_list[] \" value = \"" . $station . "\">" . $station . "</option>"; 
