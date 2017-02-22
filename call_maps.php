@@ -9,7 +9,7 @@ $parnode = $dom->appendChild($node);
 // Opens a connection to a MySQL server
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "LIMS.2017.Uppsala";
 $dbname = "marine";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);

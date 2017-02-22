@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Insert biological data</title>
+    <title>Insert station data</title>
     <meta name="description" content="">
     <meta name="author" content="">
   </head>
@@ -14,21 +14,14 @@
     <?php
     $servername = "localhost";
     $username="root";
-
     $password="LIMS.2017.Uppsala";
     $dbname = "marine";
-    $thetable="Biological";
+    $thetable="stations";
 
-    //$Bstationname=$_POST['Bstationname'];
-    $Bstationname=$_POST['station_forbiological'];
-    $Bstratummin=$_POST['Bstratummin'];
-    $Bstratummax=$_POST['Bstratummax'];
-    $Bx=$_POST['Bx'];
-    $B_y=$_POST['B_y'];
-    $Blarvastage=$_POST['Blarvastage'];
-    $Bspecies=$_POST['Bspecies'];
-    $Babundance=$_POST['Babundance'];
-
+    $Sname=$_POST['Sname'];
+    $Ssequence=$_POST['Ssequence'];
+    $Slongitude=$_POST['Slongitude'];
+    $Slatitude=$_POST['Slatitude'];
 
     // Create connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -37,8 +30,8 @@
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    $sql = "INSERT INTO $thetable (Bstationname,Bstratummin,Bstratummax,Bx,B_y,Blarvastage,Bspecies,Babundance,Bhidden)
-    VALUES ('$Bstationname[0]',$Bstratummin,$Bstratummax,$Bx,$B_y,'$Blarvastage','$Bspecies',$Babundance,0)";
+    $sql = "INSERT INTO $thetable (Sname,Ssequence,Slongitude,Slatitude,Shidden)
+    VALUES ('$Sname',$Ssequence,$Slongitude,$Slatitude,0)";
 
     if (mysqli_query($conn, $sql)) {
         echo "New record created successfully";
@@ -49,7 +42,7 @@
     mysqli_close($conn);
 
     ?>
-      
+
     </body>
     
 </html>

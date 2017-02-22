@@ -1,71 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="./favicon.ico">
-
-    <title>Download data</title>
-
-    <!-- Bootstrap core CSS -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <head>
+        <title>Download</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+    </head>
 
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+    <body>
 
-
-
-  </head>
-
-
-<body>
-
-<!-- Header and site style css to circumvent unidentified display bug -->
-
-<!-- Custom styles for this template -->
-<link href="signin.css" rel="stylesheet">
-    
-<div class="navbar navbar-inverse navbar-fixed-top">
+    <?php include_once("header.php");?>
+      
     <div class="container">
-            <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Marine</a>
-            </div>
-            <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                            <li><a href="./home.php">Home</a></li>
-                            <li><a href="./download.php">Tools</a></li>
-                            <li><a href="./insertdataform.php">Admin</a></li>
-                            <li><a href="./map.php">Map</a></li>
-                    </ul>
-            </div><!--/.nav-collapse -->
-    </div>
-</div>
-    
 
-<div class="container">
-  
-	<div class="text-center">
-		<h1>Marine</h1>
-		<p class="lead">Select data to download, it is only visible if it has a hidden value = 0, only admin can change this value.</p>
-	</div>
-	<b>Station data</b>
-<br>
+            <div class="text-center">
+                    <h1>Marine</h1>
+                    <p class="lead">Select data to download, it is only visible if it has a hidden value = 0, only admin can change this value.</p>
+            </div>
+            <b>Station data</b>
+    <br>
 	<form action="displayselectedbiological.php" method="post">
 		Choose station:
 		<select class="selectpicker" multiple data-actions-box="true" name = station_list[]>
@@ -84,11 +37,11 @@
 		<input type="submit" name="submit" Value="Submit"/>
 		</form>
 
-<br>
-<br>
+    <br>
+    <br>
 
 	<b>Physical data</b>
-<br>
+    <br>
 	<form action="displayselectedbiological.php" method="post">
 		Choose station: <select class="selectpicker" multiple data-actions-box="true"  name = station_forphysical[] id="station">
 			<?php 
@@ -126,10 +79,10 @@
 		<input type="submit" name="submit"  Value="Submit"/>
 		</form>
 
-<br>
-<br>
+    <br>
+    <br>
 	<b>Biological variables:</b> 
-<br>			
+    <br>			
 	<form action="displayselectedbiological.php" method="post">
 		Choose station: <select class="selectpicker" multiple data-actions-box="true" name = station_forbiological[]>
 			<?php 
@@ -199,9 +152,7 @@
 		<input type="submit" name="submit"  Value="Submit"/>
 		</form>
 
+    </div><!-- /.container -->
 
-</div><!-- /.container -->
-
-
-  </body>
+    </body>
 </html>

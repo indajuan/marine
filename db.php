@@ -1,7 +1,7 @@
 <?php
 	$hostname = "localhost";
 	$username = "root";
-	$password = "";
+	$password = "LIMS.2017.Uppsala";
 	$database = "marine";
 	$conn = new mysqli($hostname, $username, $password, $database)
 	or die("Could not open connection to database");
