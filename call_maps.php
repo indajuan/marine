@@ -7,12 +7,8 @@ $node = $dom->createElement("markers");
 $parnode = $dom->appendChild($node);
 
 // Opens a connection to a MySQL server
-$servername = "localhost";
-$username = "root";
-$password = "LIMS.2017.Uppsala";
-$dbname = "marine";
 
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+include 'db.php';
 
 // Check connection
 if (!$conn) {
@@ -44,5 +40,5 @@ while ($row = mysqli_fetch_assoc($result)){
 }
 
 echo $dom->saveXML();
-
+include 'closeDB.php'; 
 ?>
